@@ -1,6 +1,6 @@
 # 👋 Hi, I’m Maaz Mahmood Fazal
 
-### 🚀 AI Automation Lead | RPA Solution Architect 
+### 🚀 AI Automation Lead | RPA Solution Architect  
 📍 Lahore, Pakistan  
 📧 [maaz.mahmood1999@gmail.com](mailto:maaz.mahmood1999@gmail.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/maaz-mahmood-fazal)
@@ -9,42 +9,47 @@
 
 ## 🧠 About Me
 
-I’m a **Lead RPA Engineer** with **5+ years of experience** designing and deploying automation solutions that have streamlined over **100 business processes**, reduced manual effort by **60%**, and increased operational efficiency across multiple industries.
+I’m an **AI Automation Lead and RPA Solution Architect** with over **5 years of experience** designing and deploying automation solutions that have streamlined **100+ business processes**, reduced manual effort by **60%**, and enhanced **operational efficiency** across diverse industries.
 
-My passion lies in building **intelligent, scalable, and ROI-driven automation ecosystems** using RPA and AI tools like **UiPath, Python, and Uxplore**.  
-As a technical lead, I bridge the gap between business needs and technical execution — guiding teams, optimizing workflows, and driving digital transformation.
+My expertise lies in building **intelligent, scalable, and ROI-driven automation ecosystems** using **UiPath, Python, and Uxplore**, integrating **LLMs**, APIs, and modern DevOps practices.  
+I bridge the gap between **technical architecture** and **business transformation** — leading teams, optimizing workflows, and driving enterprise-level digital innovation.
 
 ---
 
 ## 💼 Professional Experience
 
-### 🏢 **AI Automation Lead — HachiAi, Canada**  
+### 🏢 **AI Automation Lead & RPA Solution Architect — HachiAi, Canada**  
 *Nov 2020 – Present*
 
-- Designed and deployed 10+ automation solutions, achieving up to **30% faster processing** and **60% manual effort reduction**.  
-- Integrated RPA with APIs and IT infrastructure to enhance compatibility and scalability.  
-- Authored detailed process documentation and ensured **99%+ accuracy** through structured testing.  
-- Trained and mentored junior developers, accelerating team proficiency in automation technologies.  
-- Researched and implemented AI-driven solutions to expand automation capabilities.
+- Architected and deployed **enterprise-grade automation solutions** improving process speed by **30%** and cutting manual effort by **60%**.  
+- Designed **modular RPA architectures** integrated with APIs, CRMs, and databases for scalable, reusable automation frameworks.  
+- Partnered with business stakeholders to identify automation opportunities and deliver measurable ROI.  
+- Mentored and led a team of RPA developers, ensuring maintainable, efficient, and secure automation deployments.  
+- Integrated **AI/LLM-based decision logic** into automation workflows, improving exception handling and accuracy by **40%**.  
+- Authored detailed design documents, SOPs, and solution blueprints for consistent governance.
 
 #### 🔹 Key Projects
-- **TELUS Business Connect:** Automated order processing system — improved efficiency from **70% → 97%**.  
-- **Logistics Alliance:** Integrated APIs to eliminate manual data entry — saved **40+ hours/week**.  
-- **Naylor:** Automated invoice validation — reduced delays by **30%** and improved accuracy.  
-- **CellNTell:** Automated product repricing on Amazon/Walmart — boosted profitability by **33%**.  
-- **IDRF:** Leveraged LLMs to automate donation processing — improved accuracy by **42%**.  
-- **ATS:** Automated booking appointments — reduced manual effort by **85%**.  
-- **Distrivalto:** Built SAP-integrated automation suite — achieved **90% processing efficiency**.
+
+| Project | Role | Description | Impact |
+|----------|-------|-------------|---------|
+| **TELUS Business Connect** | *Solution Architect* | Designed and automated telecom order processing system via UiPath + APIs. | ⏱️ Improved efficiency from 70% → 97% |
+| **Logistics Alliance** | *RPA Lead* | Automated logistics data entry through REST API integration. | 💰 40+ hours saved weekly |
+| **Naylor** | *Automation Lead* | Automated invoice validation and reconciliation workflows. | 📈 30% reduction in processing delays |
+| **CellNTell** | *Solution Architect* | Automated repricing for eCommerce listings on Amazon, Walmart & BestBuy. | 💵 +33% profit increase |
+| **IDRF (NGO)** | *AI Automation Lead* | Built LLM-powered donation data processing automation. | 🎯 +42% accuracy improvement |
+| **ATS** | *RPA Lead* | Automated appointment scheduling in C3 platform. | 📉 85% reduction in manual booking |
+| **Distrivalto** | *Solution Architect* | Multi-bot SAP automation suite for orders, invoices & tracking updates. | ⚙️ 90% process efficiency |
 
 ---
 
 ### 🏥 **Senior RPA Developer — Nestmed Inc., USA**  
 *Dec 2024 – Mar 2025*
 
-- Developed Python-based automations to reduce manual workload by **50%**.  
-- Automated healthcare form processing via Selenium — cut form completion time by **90%**.  
-- Integrated automations into **CI/CD pipelines**, reducing deployment time by **30%**.  
-- Maintained Git version control and performed rigorous testing to ensure process reliability.
+- Developed **Python + Selenium** automations for healthcare workflows, reducing manual workload by **50%**.  
+- Automated form interactions and data entry, cutting average completion time by **90%**.  
+- Integrated bots into **CI/CD pipelines**, reducing deployment time by **30%**.  
+- Refactored and optimized Python scripts for modularity and reusability across automation projects.  
+- Conducted structured testing and debugging, ensuring **99% process accuracy** in production.
 
 ---
 
@@ -77,25 +82,30 @@ Punjab University College of Information Technology, Lahore
 
 ---
 
-## 🧠 Current Focus
+## 🧠 Featured Projects — AI Automation & RPA Architecture
 
-- Integrating **LLMs with RPA** for intelligent decision-making  
-- Developing **autonomous AI agents** using n8n and APIs  
-- Expanding automation pipelines through **API-first architectures**
+As both an **AI Automation Lead** and **RPA Solution Architect**, I design, develop, and deploy automation ecosystems that merge RPA precision with AI intelligence — ensuring high scalability, speed, and ROI.
+
+| 💼 Project | 🧩 Role & Tech Focus | ⚙️ Description | 🚀 Impact |
+|-------------|----------------------|----------------|-----------|
+| [📦 **TELUS Business Connect**](./projects/TELUS_Business_Connect) | *RPA Solution Architect* — UiPath + APIs | Automated telecom order processing end-to-end. | ⏱️ 70% → 97% efficiency |
+| [🚚 **Logistics Alliance**](./projects/Logistics_Alliance) | *Automation Lead* — API + Excel Automation | Automated logistics data entry via REST APIs. | 💰 40+ hours saved weekly |
+| [💡 **IDRF LLM Automation**](./projects/IDRF_LLM_Automation) | *AI Automation Lead* — LLM + UiPath | AI-powered donation processing with intelligent validation. | 🎯 +42% accuracy |
+| [🧾 **Distrivalto SAP Automation**](./projects/Distrivalto_SAP_Automation) | *Solution Architect* — SAP + LLM Integration | Multi-bot suite for order, invoice & tracking automation. | ⚙️ 90% process efficiency |
+| [📅 **ATS Booking Bot**](./projects/ATS_Booking_Automation) | *RPA Lead* — Web + Outlook Automation | Fully automated appointment scheduling system. | 📉 85% reduction in manual work |
 
 ---
 
-## 📂 Featured Projects
+### 📂 View All Projects
+👉 Explore detailed write-ups and process architectures in the [`/projects`](./projects) folder.
 
-| Project | Description | Impact |
-|----------|--------------|--------|
-| **TELUS Business Connect** | Automated order processing for telecom services. | ⚙️ 97% process accuracy |
-| **Logistics Alliance** | API-driven automation reducing manual entry. | 💰 40 hrs/week saved |
-| **IDRF LLM Automation** | Donation download automation using LLM models. | 🎯 +42% accuracy |
-| **Distrivalto SAP Automation** | End-to-end SAP integration for order & invoice processing. | ⏱️ +90% efficiency |
-| **ATS Booking Bot** | Appointment scheduling automation. | 📉 85% less manual work |
+---
 
-Explore detailed write-ups in the [`/projects`](./projects) folder *(coming soon)*.
+## 🧩 Current Focus
+
+- Integrating **Large Language Models (LLMs)** into RPA workflows for adaptive decision-making.  
+- Building **autonomous AI agents** using n8n, APIs, and UiPath integrations.  
+- Designing **API-first automation pipelines** and scalable multi-bot architectures.
 
 ---
 
