@@ -1,3 +1,5 @@
+![Maaz Mahmood Fazal - AI Automation Lead | RPA Solution Architect](https://github.com/Necromancer14/maazmahmoodfazal-portfolio/blob/main/maaz-banner.png)
+
 # 👋 Hi, I’m Maaz Mahmood Fazal
 
 ### 🚀 AI Automation Lead | RPA Solution Architect  
