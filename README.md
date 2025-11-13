@@ -1,6 +1,6 @@
 # 👋 Hi, I’m Maaz Mahmood Fazal
 
-### 🚀 AI Automation Lead | Lead RPA Engineer  
+### 🚀 AI Automation Lead | RPA Solution Architect 
 📍 Lahore, Pakistan  
 📧 [maaz.mahmood1999@gmail.com](mailto:maaz.mahmood1999@gmail.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/maaz-mahmood-fazal)
