@@ -8,7 +8,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maaz-mahmood-fazal)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:maaz.mahmood1999@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)]([https://github.com/maazmahmoodfazal?tab=repositories](https://github.com/Necromancer14/maazmahmoodfazal-portfolio/blob/main/README.md))
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)]([https://github.com/maazmahmoodfazal?tab=repositories](https://github.com/Necromancer14/maazmahmoodfazal-portfolio/blob/main/README.md)
 [![Location](https://img.shields.io/badge/📍_Lahore,_Pakistan-grey?style=for-the-badge)](https://www.linkedin.com/in/maaz-mahmood-fazal)
 
 </div>
