@@ -21,8 +21,29 @@ I bridge the gap between **technical architecture** and **business transformatio
 
 ## 💼 Professional Experience
 
+### 🏢 **AI Automation Consultant | RPA Solution Architect & DevOps Lead — Oz**
+*2025 – Present*
+
+- Hands-on in **designing, building, and delivering** intelligent RPA solutions for insurance and healthcare clients across the full project lifecycle.
+- Architected and developed **HIPAA-compliant automation workflows** ensuring PHI handling, document generation, and data routing meet full regulatory standards.
+- Built and maintained **Azure DevOps CI/CD pipelines and release workflows** for RPA bot deployments — reducing deployment effort by **~30%** and establishing pipeline standards adopted team-wide.
+- Managed end-to-end release pipelines from source control integration to staged rollouts, cutting environment-related failures significantly.
+- Partnered with stakeholders on solution design, bot architecture, and delivery across multiple concurrent insurance and healthcare automation projects.
+
+#### 🔹 Key Projects
+
+| Project | Role | Description | Impact |
+|----------|-------|-------------|---------|
+| **Auto ID Card Generation Bot** | *Solution Architect & Developer* | Designed and built a fully automated insurance ID card generation pipeline. | ⏱️ ~85% faster issuance, zero manual errors |
+| **Email Procedure Bot** | *Automation Lead* | Built an agentic workflow parsing emails and autonomously creating client system tasks. | 📉 ~70% less triaging effort, ~60% fewer errors |
+| **Health Plan Notice Bot** | *RPA Developer* | Developed HIPAA-compliant bot dynamically generating Health Plan notices from policy updates. | 📄 ~75% faster turnaround, ~65% fewer compliance errors |
+| **Endorsements Bot** | *Solution Architect & Developer* | Architected multi-step policy management bot for vehicle add/remove with downstream ID card generation. | ⚙️ ~80% faster processing, improved data accuracy |
+| **Alert on Variance Report Bot** | *Automation Lead* | Built proactive expiry monitoring bot auto-generating tasks for at-risk accounts. | 🎯 ~90% fewer missed follow-ups |
+
+---
+
 ### 🏢 **AI Automation Lead & RPA Solution Architect — HachiAi, Canada**  
-*Nov 2020 – Present*
+*Nov 2020 – Feb 2026*
 
 - Architected and deployed **enterprise-grade automation solutions** improving process speed by **30%** and cutting manual effort by **60%**.  
 - Designed **modular RPA architectures** integrated with APIs, CRMs, and databases for scalable, reusable automation frameworks.  
