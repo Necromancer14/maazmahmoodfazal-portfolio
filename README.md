@@ -1,197 +1,93 @@
-![Maaz Mahmood Fazal - AI Automation Lead | RPA Solution Architect](https://github.com/Necromancer14/maazmahmoodfazal-portfolio/blob/main/maaz_banner.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+  <img alt="Maaz Mahmood Fazal, AI Automation Lead and RPA Solution Architect" src="assets/banner-light.svg" width="100%">
+</picture>
 
-<div align="center">
+**[Portfolio site](https://necromancer14.github.io/maazmahmoodfazal-portfolio/)** | [LinkedIn](https://www.linkedin.com/in/maaz-mahmood-fazal) | [maaz.mahmood1999@gmail.com](mailto:maaz.mahmood1999@gmail.com) | Jeddah, Saudi Arabia
 
-# 👋 Hi, I'm Maaz Mahmood Fazal
+I design and deliver AI agents and automation that do real operations work: certificates of insurance, telecom orders, SAP invoices and donation records. Over six years I have taken more than 100 business processes from manual to automated, first with UiPath and now with LLM agents on Azure.
 
-### 🚀 AI Automation Lead | RPA Solution Architect
+I'm looking for AI automation and solution architect roles in Saudi Arabia, the UAE and Europe. I hold a transferable iqama.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maaz-mahmood-fazal)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:maaz.mahmood1999@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)]([https://github.com/maazmahmoodfazal?tab=repositories](https://github.com/Necromancer14/maazmahmoodfazal-portfolio/edit/main/README.md))
-[![Location](https://img.shields.io/badge/📍_Lahore,_Pakistan-grey?style=for-the-badge)](https://www.linkedin.com/in/maaz-mahmood-fazal)
+## The agent I run in production
 
-</div>
+A certificate of insurance agent for a US insurance client, built at Oz on Azure AI Foundry. About **95%** of requests complete through the agent, and a person approves every certificate before it goes out. [Full write-up](projects/COI_Agent/README.md)
 
----
+```mermaid
+flowchart LR
+    A[Request arrives<br/>email or portal] --> B[LLM classifies<br/>type, holder, requestor]
+    B --> C[Agent orchestrates<br/>picks the workflow]
+    B -. about 5% .-> M[Manual queue]
+    C --> D[Certificate built<br/>Outmarket.ai API]
+    D --> E[Servicer reviews<br/>approve, reject, retry]
+    E -- retry --> C
+    E --> F[Emailed and filed<br/>audit trail kept]
+```
 
-<div align="center">
+Runs on Azure Service Bus, Cosmos DB for the audit trail, Blob Storage for the PDFs, and managed identities between services.
 
-| 🗂️ Projects Delivered | ⏱️ Years Experience | 📉 Manual Effort Reduced | ✅ Workflow Accuracy | 🏥 Compliance |
-|:---:|:---:|:---:|:---:|:---:|
-| **30+** | **7+** | **60%** | **99%+** | **HIPAA-Ready** |
+## Public code
 
-</div>
+Client work sits behind security, so this is the code I can show.
 
----
+**[feedback-agent](https://github.com/Necromancer14/feedback-agent)**: a help-desk agent that answers from a knowledge base, abstains when nothing fits, and learns from thumbs up, thumbs down and corrections. It has 19 tests and a cross-validated evaluation, and the README reports the result as it came out.
 
-## 🧠 About Me
+| Top-1 correct | No feedback | After feedback |
+|---|---|---|
+| Unseen questions (4-fold) | 84% | 84% |
+| Same questions asked again | 84% | 100% |
 
-I'm an **AI Automation Lead and RPA Solution Architect** with over **7 years of experience** designing and deploying automation solutions that have streamlined **100+ business processes**, reduced manual effort by **60%**, and enhanced **operational efficiency** across diverse industries.
+## Delivery at Oz
 
-My expertise lies in building **intelligent, scalable, and ROI-driven automation ecosystems** using **UiPath, Python, and Azure DevOps**, integrating **LLMs**, APIs, and modern CI/CD practices.  
-I bridge the gap between **technical architecture** and **business transformation** — leading teams, optimizing workflows, and driving enterprise-level digital innovation.
+Insurance and healthcare automation for a US client, with HIPAA-compliant handling of PHI. Feb 2026 to present.
 
----
+| Project | What it does | Result |
+|---|---|---|
+| [Certificate of insurance agent](projects/COI_Agent/README.md) | LLM classification, API orchestration, human approval | 95% of requests through the agent |
+| [Email Procedure Bot](projects/Email_Procedure_Bot/README.md) | Reads emails and creates structured tasks | 70% less triage effort, 60% fewer errors |
+| Auto ID Card Generation | Policy data to compliant insurance ID cards | 85% faster issuance |
+| Endorsements Bot | Vehicle add and remove, then ID cards downstream | 80% faster processing |
+| Health Plan Notice Bot | HIPAA-compliant notices from policy updates | 75% faster, 65% fewer compliance errors |
+| Alert on Variance Report | Flags expiring policies, creates follow-up tasks | 90% fewer missed follow-ups |
+| Release pipelines | Azure DevOps CI/CD and staged releases for every bot | 30% less deployment effort |
 
-## 🛠️ Tech Stack
+## Delivery at HachiAi
 
-<div align="center">
+Telecom, logistics, finance, eCommerce and nonprofit clients. Nov 2020 to Feb 2026.
 
-![UiPath](https://img.shields.io/badge/UiPath-FA4616?style=flat-square&logo=uipath&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Power Automate](https://img.shields.io/badge/Power_Automate-0066FF?style=flat-square&logo=microsoft&logoColor=white)
-![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-0078D7?style=flat-square&logo=azuredevops&logoColor=white)
-![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
+| Project | What it does | Result |
+|---|---|---|
+| [TELUS Business Connect](projects/TELUS_Business_Connect/README.md) | Telecom order processing through APIs | 70% to 97% efficiency, 15 to 3 minutes per order |
+| [Distrivalto](projects/Distrivalto_SAP_Automation/README.md) | SAP orders, invoices and tracking with Gemini and MCP | 90% process efficiency |
+| [IDRF](projects/IDRF_LLM_Automation/README.md) | Donation data with LLM field mapping | 42% better data accuracy |
+| [Logistics Alliance](projects/Logistics_Alliance/README.md) | Shipment data posted by REST API | 40+ hours saved a week |
+| CellNTell | Repricing on Amazon, Walmart and Best Buy | 33% higher profit |
+| Naylor | Invoice validation and reconciliation | 30% fewer processing delays |
+| [ATS](projects/ATS_Booking_Automation/README.md) | Appointment booking in the C3 portal | 85% less manual booking |
 
-</div>
+## Experience
 
----
+| Dates | Role | Company |
+|---|---|---|
+| Feb 2026 to present | AI Automation Consultant and RPA Solution Architect | Oz |
+| Nov 2023 to Feb 2026 | AI Automation Lead and RPA Solution Architect | HachiAi, Canada |
+| Nov 2022 to Nov 2023 | Senior RPA Developer | HachiAi, Canada |
+| Nov 2020 to Nov 2022 | RPA Developer, joined as an intern | HachiAi, Canada |
 
-## 💼 Professional Experience
+## What I work with
 
-### 🏢 **AI Automation Consultant | RPA Solution Architect & DevOps Lead — Oz**
-*2025 – Present*
+- **Agents and LLMs:** Azure AI Foundry, OpenAI and Gemini APIs, MCP tool calling, RAG and vector search, UiPath Agentic Automation
+- **Automation:** UiPath (REFramework, Orchestrator), Power Automate, Automation Anywhere, n8n, document processing
+- **Azure and DevOps:** Azure DevOps CI/CD, Service Bus, Cosmos DB, Blob Storage, managed identities, GitHub Actions, Docker, Git
+- **Languages:** Python, SQL, VB.NET, PowerShell, REST APIs
 
-- Hands-on in **designing, building, and delivering** intelligent RPA solutions for insurance and healthcare clients across the full project lifecycle.
-- Architected and developed **HIPAA-compliant automation workflows** ensuring PHI handling, document generation, and data routing meet full regulatory standards.
-- Built and maintained **Azure DevOps CI/CD pipelines and release workflows** for RPA bot deployments — reducing deployment effort by **~30%** and establishing pipeline standards adopted team-wide.
-- Managed end-to-end release pipelines from source control integration to staged rollouts, cutting environment-related failures significantly.
-- Partnered with stakeholders on solution design, bot architecture, and delivery across multiple concurrent insurance and healthcare automation projects.
+## Certifications and education
 
-#### 🔹 Key Projects
+- UiPath Automation Developer Associate
+- Microsoft Power Automate RPA Developer
+- Advanced REFramework Implementation (UiPath)
+- Python for Automation
+- BS Software Engineering, Punjab University College of Information Technology, Lahore, 2016 to 2020
 
-| Project | Role | Description | Impact |
-|----------|-------|-------------|---------|
-| **Auto ID Card Generation Bot** | *Solution Architect & Developer* | Designed and built a fully automated insurance ID card generation pipeline. | ⏱️ ~85% faster issuance, zero manual errors |
-| **Email Procedure Bot** | *Automation Lead* | Built an agentic workflow parsing emails and autonomously creating client system tasks. | 📉 ~70% less triaging effort, ~60% fewer errors |
-| **Health Plan Notice Bot** | *RPA Developer* | Developed HIPAA-compliant bot dynamically generating Health Plan notices from policy updates. | 📄 ~75% faster turnaround, ~65% fewer compliance errors |
-| **Endorsements Bot** | *Solution Architect & Developer* | Architected multi-step policy management bot for vehicle add/remove with downstream ID card generation. | ⚙️ ~80% faster processing, improved data accuracy |
-| **Alert on Variance Report Bot** | *Automation Lead* | Built proactive expiry monitoring bot auto-generating tasks for at-risk accounts. | 🎯 ~90% fewer missed follow-ups |
-
----
-
-### 🏢 **AI Automation Lead & RPA Solution Architect — HachiAi, Canada**
-*Nov 2020 – Feb 2026*
-
-- Architected and deployed **enterprise-grade automation solutions** improving process speed by **30%** and cutting manual effort by **60%**.
-- Designed **modular RPA architectures** integrated with APIs, CRMs, and databases for scalable, reusable automation frameworks.
-- Partnered with business stakeholders to identify automation opportunities and deliver measurable ROI.
-- Mentored and led a team of RPA developers, ensuring maintainable, efficient, and secure automation deployments.
-- Integrated **AI/LLM-based decision logic** into automation workflows, improving exception handling and accuracy by **40%**.
-- Authored detailed design documents, SOPs, and solution blueprints for consistent governance.
-
-#### 🔹 Key Projects
-
-| Project | Role | Description | Impact |
-|----------|-------|-------------|---------|
-| **TELUS Business Connect** | *Solution Architect* | Designed and automated telecom order processing system via UiPath + APIs. | ⏱️ Improved efficiency from 70% → 97% |
-| **Logistics Alliance** | *RPA Lead* | Automated logistics data entry through REST API integration. | 💰 40+ hours saved weekly |
-| **Naylor** | *Automation Lead* | Automated invoice validation and reconciliation workflows. | 📈 30% reduction in processing delays |
-| **CellNTell** | *Solution Architect* | Automated repricing for eCommerce listings on Amazon, Walmart & BestBuy. | 💵 +33% profit increase |
-| **IDRF (NGO)** | *AI Automation Lead* | Built LLM-powered donation data processing automation. | 🎯 +42% accuracy improvement |
-| **ATS** | *RPA Lead* | Automated appointment scheduling in C3 platform. | 📉 85% reduction in manual booking |
-| **Distrivalto** | *Solution Architect* | Multi-bot SAP automation suite for orders, invoices & tracking updates. | ⚙️ 90% process efficiency |
-
----
-
-### 🏥 **Senior RPA Developer — Nestmed Inc., USA**
-*Dec 2024 – Mar 2025*
-
-- Developed **Python + Selenium** automations for healthcare workflows, reducing manual workload by **50%**.
-- Automated form interactions and data entry, cutting average completion time by **90%**.
-- Integrated bots into **CI/CD pipelines**, reducing deployment time by **30%**.
-- Refactored and optimized Python scripts for modularity and reusability across automation projects.
-- Conducted structured testing and debugging, ensuring **99% process accuracy** in production.
-
----
-
-## 🧩 Technical Skills
-
-| Category | Tools & Technologies |
-|-----------|----------------------|
-| **RPA Platforms** | UiPath, Uxplore, Automation Anywhere, Blue Prism, Power Automate, WorkFusion, Make, Zapier, n8n |
-| **Programming & Scripting** | Python, SQL, VB, PowerShell |
-| **Frameworks & Concepts** | UiPath REFramework, API Integration, Data Parsing, Workflow Design |
-| **DevOps / CI-CD** | Azure DevOps, Git, GitHub Actions, Docker, YAML |
-| **Soft Skills** | Stakeholder Collaboration, Analytical Thinking, Project Management, Communication |
-
----
-
-## 🎓 Education
-
-**BS — Software Engineering**
-Punjab University College of Information Technology, Lahore
-*(2016 – 2020)*
-
----
-
-## 🏅 Certifications
-
-- ✅ UiPath Certified Professional — Automation Developer Associate
-- ✅ Microsoft Power Automate RPA Developer Training
-- ✅ Advanced REFramework Implementation
-- ✅ Python for Automation
-
----
-
-## 🧠 Featured Projects — AI Automation & RPA Architecture
-
-As both an **AI Automation Lead** and **RPA Solution Architect**, I design, develop, and deploy automation ecosystems that merge RPA precision with AI intelligence — ensuring high scalability, speed, and ROI.
-
-### 🏢 Oz — Insurance & Healthcare Automation
-
-| 💼 Project | 🧩 Role & Tech Focus | ⚙️ Description | 🚀 Impact |
-|-------------|----------------------|----------------|-----------|
-| **Auto ID Card Generation Bot** | *Solution Architect & Developer* — UiPath + DevOps | Fully automated insurance ID card pipeline from policy data to compliant card output. | ⏱️ ~85% faster issuance |
-| **Health Plan Notice Bot** | *RPA Developer* — UiPath + Document Intelligence | HIPAA-compliant bot generating Health Plan notices dynamically from policy updates. | 📄 ~75% faster turnaround |
-| **Endorsements Bot** | *Solution Architect & Developer* — UiPath + Multi-bot | Policy management bot for vehicle add/remove with downstream ID card generation. | ⚙️ ~80% faster processing |
-| **Email Procedure Bot** | *Automation Lead* — UiPath + Agentic Workflow | Agentic email parser that autonomously creates structured tasks in the client system. | 📉 ~70% less manual effort |
-| **Alert on Variance Report Bot** | *Automation Lead* — UiPath + Monitoring | Proactive policy expiry monitor that auto-generates tasks for at-risk accounts. | 🎯 ~90% fewer missed follow-ups |
-
-### 🏢 HachiAi — Enterprise & Global Clients
-
-| 💼 Project | 🧩 Role & Tech Focus | ⚙️ Description | 🚀 Impact |
-|-------------|----------------------|----------------|-----------|
-| [📦 **TELUS Business Connect**](./projects/TELUS_Business_Connect) | *RPA Solution Architect* — UiPath + APIs | Automated telecom order processing end-to-end. | ⏱️ 70% → 97% efficiency |
-| [🚚 **Logistics Alliance**](./projects/Logistics_Alliance) | *Automation Lead* — API + Excel Automation | Automated logistics data entry via REST APIs. | 💰 40+ hours saved weekly |
-| [💡 **IDRF LLM Automation**](./projects/IDRF_LLM_Automation) | *AI Automation Lead* — LLM + UiPath | AI-powered donation processing with intelligent validation. | 🎯 +42% accuracy |
-| [🧾 **Distrivalto SAP Automation**](./projects/Distrivalto_SAP_Automation) | *Solution Architect* — SAP + LLM Integration | Multi-bot suite for order, invoice & tracking automation. | ⚙️ 90% process efficiency |
-| [📅 **ATS Booking Bot**](./projects/ATS_Booking_Automation) | *RPA Lead* — Web + Outlook Automation | Fully automated appointment scheduling system. | 📉 85% reduction in manual work |
-
----
-
-### 📂 View All Projects
-👉 Explore detailed write-ups and process architectures in the [`/projects`](./projects) folder.
-
----
-
-## 🔭 Current Focus
-
-- Integrating **Large Language Models (LLMs)** into RPA workflows for adaptive decision-making.
-- Building **autonomous AI agents** using n8n, APIs, and UiPath integrations.
-- Designing **API-first automation pipelines** and scalable multi-bot architectures.
-
----
-
-## 🌐 Connect With Me
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maaz-mahmood-fazal)
-[![Email](https://img.shields.io/badge/Email-Get_In_Touch-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:maaz.mahmood1999@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-View_Projects-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/maazmahmoodfazal?tab=repositories)
-
-</div>
-
----
-
-<div align="center">
-
-> *"Automation isn't about replacing people — it's about empowering them to focus on what truly matters."*
-
-</div>
+Languages: English (fluent), Arabic (conversational), Urdu (native).

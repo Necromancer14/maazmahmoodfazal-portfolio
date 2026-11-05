@@ -1,35 +1,26 @@
-# 📅 ATS — Appointment Booking Automation
+# ATS: appointment booking
 
-### 🏢 Client: ATS
-### 🧰 Tools Used: UiPath | Web Automation | API Integration | Excel
+HachiAi.
 
----
+[Back to portfolio](../../README.md)
 
-## 🧩 Problem
-Employees manually booked appointments through the C3 portal, consuming hours daily and leading to scheduling overlaps and delays.
+## Problem
 
----
+Staff booked appointments in the C3 portal by hand, which took hours each day and caused overlaps.
 
-## ⚙️ Solution
-Built an RPA bot that:
-- Extracts appointment requests from shared Excel/Outlook inbox.  
-- Books available time slots in the C3 portal automatically via browser automation.  
-- Sends automated email confirmations and updates the status sheet.
+## What I built
 
----
+1. The bot takes booking requests from a shared Outlook inbox and Excel.
+2. It books free slots in the C3 portal.
+3. It sends confirmations and updates the status sheet.
 
-## 🚀 Outcome
-- Reduced manual scheduling time by **85%**
-- Eliminated booking conflicts and missed appointments  
-- Improved employee productivity and data visibility
+Slot rules are configurable, and retries cover portal timeouts.
 
----
+## Result
 
-## 🧠 Highlights
-- Integrated Outlook automation for seamless scheduling  
-- Error recovery and retry mechanism for portal timeouts  
-- Built configurable schedule logic to handle variable time slots  
+- **85%** less manual booking work
+- No more double bookings or missed appointments
 
----
+## Stack
 
-> **Impact:** Drastically improved appointment management through a fully automated, end-to-end scheduling bot.
+UiPath, Outlook, Excel, web automation

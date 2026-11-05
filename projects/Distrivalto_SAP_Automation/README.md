@@ -1,34 +1,21 @@
-# 💡 IDRF (International Development & Relief Foundation) — Donation Download Automation
+# Distrivalto: SAP order, invoice and tracking suite
 
-### 🧰 Tools Used: UiPath | LLM Model Integration | Excel | Web Automation
+HachiAi.
 
----
+[Back to portfolio](../../README.md)
 
-## 🧩 Problem
-The foundation’s finance team spent hours downloading and reconciling donation data from Luminate Online, facing inconsistencies and frequent delays.
+## Problem
 
----
+Orders, invoices and tracking updates were processed in SAP by hand.
 
-## ⚙️ Solution
-Developed an automation that:
-- Logs into Luminate Online to extract donation data.
-- Cleans, validates, and enriches the data using a **Large Language Model (LLM)** for intelligent field mapping.
-- Exports validated data into a financial system-ready Excel format.
+## What I built
 
----
+A suite of bots that runs the three processes end to end in SAP. A Gemini LLM with MCP tool calling handles the decisions that fixed rules could not.
 
-## 🚀 Outcome
-- Improved data accuracy by **42%**
-- Reduced manual work by **70%**
-- Enabled real-time donation data availability for reporting
+## Result
 
----
+- **90%** end-to-end process efficiency
 
-## 🧠 Highlights
-- Integrated **LLM-based decision-making** for contextual field mapping  
-- Implemented dynamic page navigation handling in UiPath  
-- Created automated reconciliation reports  
+## Stack
 
----
-
-> **Impact:** Transformed a fully manual financial data workflow into a smart, AI-assisted automation system.
+UiPath, SAP, Gemini, MCP tool calling

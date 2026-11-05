@@ -1,36 +1,27 @@
-# 🚚 Logistics Alliance — API Data Entry Automation
+# Logistics Alliance: shipment data entry
 
-### 🏢 Client: Logistics Alliance
-### 🧰 Tools Used: UiPath | REST APIs | Excel | Orchestrator
+HachiAi, logistics.
 
----
+[Back to portfolio](../../README.md)
 
-## 🧩 Problem
-Employees manually entered logistics order data into multiple portals, consuming 40+ hours weekly and leading to data mismatches and fatigue.
+## Problem
 
----
+Staff entered shipment data into the logistics system by hand, which took more than 40 hours a week and produced mismatches.
 
-## ⚙️ Solution
-Built an RPA solution that:
-- Extracts shipment details from structured Excel reports.
-- Uses REST API integration to automatically post data into the logistics system.
-- Logs all responses and exceptions into a centralized dashboard.
+## What I built
 
----
+1. The bot reads shipment details from structured Excel reports.
+2. It posts them to the logistics system through REST APIs.
+3. Every response and exception is logged centrally.
 
-## 🚀 Outcome
-- **40+ hours saved weekly**
-- **50% reduction in errors**
-- Enhanced system reliability through audit logs
-- Scalable solution that adapts to new clients and shipment formats
+Credentials and endpoints sit in Orchestrator assets, and retries cover transient API failures. The design is modular, so new endpoints and formats can be added.
 
----
+## Result
 
-## 🧠 Highlights
-- Designed modular automation architecture for multiple API endpoints  
-- Used Orchestrator assets for credential and endpoint management  
-- Integrated retry logic for transient API failures  
+- **40+ hours** saved every week
+- **50%** fewer errors
+- A full audit log of every posting
 
----
+## Stack
 
-> **Impact:** Reduced data entry overhead, minimized human error, and created a fully auditable automation workflow.
+UiPath, Orchestrator, REST APIs, Excel
