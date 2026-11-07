@@ -31,6 +31,17 @@ Runs on Azure Service Bus, Cosmos DB for the audit trail, Blob Storage for the P
 
 Client work sits behind security, so this is the code I can show.
 
+**[invoice-desk](https://github.com/Necromancer14/invoice-desk)** ([live demo](https://invoice-desk-ct8w.onrender.com)): a Saudi e-invoice intake desk. It reads English and Arabic invoices from text, PDFs and photos, checks them against rules that admins edit in the portal, approves clean ones and sends doubtful ones to a person. The model only extracts, and deterministic rules decide. Includes 14 rule types, a dry run with versioned rules, full Arabic with a right-to-left layout, any of six AI providers or a free built-in reader, an MCP server, and 162 tests. Python, FastAPI, React, TypeScript.
+
+| Free reader, no AI model (synthetic invoices) | Right decision | Fields correct |
+|---|---|---|
+| All (60) | 80% | 81% |
+| Text (40) | 90% | 92% |
+| PDF with a text layer (10) | 100% | 100% |
+| Photos (10) | 20% | 13% |
+
+No unsafe auto-approvals and no wrong rejections. What the reader cannot read goes to a person.
+
 **[feedback-agent](https://github.com/Necromancer14/feedback-agent)**: a help-desk agent that answers from a knowledge base, abstains when nothing fits, and learns from thumbs up, thumbs down and corrections. It has 19 tests and a cross-validated evaluation, and the README reports the result as it came out.
 
 | Top-1 correct | No feedback | After feedback |

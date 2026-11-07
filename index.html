@@ -8,7 +8,7 @@
 <title>Maaz Mahmood Fazal, AI Agents &amp; Automation Architect</title>
 <meta name="description" content="AI agents and automation architect. I design and deliver LLM agents and automation for insurance, healthcare, telecom, logistics and finance teams.">
 <meta property="og:title" content="Maaz Mahmood Fazal, AI Agents &amp; Automation Architect">
-<meta property="og:description" content="AI agents and automation in production: a certificate of insurance agent on Azure, 100+ automated business processes, and public code with a real evaluation.">
+<meta property="og:description" content="AI agents and automation in production: a certificate of insurance agent on Azure, a Saudi e-invoice desk you can try live, and 100+ automated business processes.">
 <meta property="og:image" content="https://necromancer14.github.io/maazmahmoodfazal-portfolio/assets/og.png">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -251,6 +251,12 @@ table.eval { border-collapse: collapse; font-size: 0.93rem; margin: 6px 0 14px; 
 table.eval th, table.eval td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); }
 table.eval th { font-weight: 600; color: var(--muted); font-size: 0.85rem; }
 .link-out { font-weight: 600; }
+.case-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.case-links .btn { padding: 9px 14px; font-size: 0.95rem; }
+.case-meta .fine { font-size: 0.85rem; }
+.shot { margin: 6px 0 18px; }
+.shot img { width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); }
+.shot figcaption { margin-top: 8px; font-size: 0.88rem; color: var(--muted); }
 
 /* delivery list */
 .group-title { margin: 40px 0 4px; font-size: 1.1rem; font-weight: 700; font-stretch: 112%; }
@@ -498,6 +504,50 @@ footer { border-top: 1px solid var(--line); padding: 20px 0 32px; color: var(--m
       </article>
 
       <article class="case" id="proof">
+        <div class="case-meta">
+          <h3>invoice-desk</h3>
+          <p>Public code and live demo. Python, FastAPI, React. 2026.</p>
+          <div class="result"><strong>0</strong><span>unsafe auto-approvals on 60 test invoices with a known answer key</span></div>
+          <div class="case-links">
+            <a class="btn btn-primary" href="https://invoice-desk-ct8w.onrender.com">Try the live demo</a>
+            <a class="btn" href="https://github.com/Necromancer14/invoice-desk">Read the code</a>
+          </div>
+          <p class="fine">The demo runs on a free server, so the first load can take about a minute. All data in it is made up.</p>
+        </div>
+        <div class="case-body">
+          <p>A Saudi e-invoice intake desk. Supplier invoices arrive as text, PDF or phone photo, in English, Arabic or both. A reader pulls out the fields, a rule engine checks them, clean invoices are approved automatically and doubtful ones go to a person. Every decision, human or automatic, is logged.</p>
+          <figure class="shot">
+            <picture>
+              <source srcset="assets/invoice-desk-review-680.webp 680w, assets/invoice-desk-review.webp 1360w" sizes="(max-width: 900px) 100vw, 700px" type="image/webp">
+              <img src="assets/invoice-desk-review.jpg" width="1360" height="860" loading="lazy" alt="invoice-desk review queue: a list of invoices with failed checks beside the original tax invoice">
+            </picture>
+            <figcaption>The review queue: the original invoice beside its extracted fields, with keyboard shortcuts to approve, reject and move on.</figcaption>
+          </figure>
+          <h4>Design decisions</h4>
+          <ul class="steps">
+            <li><strong>The model proposes, the rules decide.</strong> The model only extracts fields. Approval comes from deterministic checks, so a wrong or manipulated extraction is caught by arithmetic and format rules. One test invoice hides an instruction aimed at the model.</li>
+            <li><strong>Rules are data.</strong> 14 rule types, including Saudi VAT number format, 15% VAT, line totals and QR code agreement, live in the database. Admins edit them in the portal, a dry run shows how many past decisions would change, and every change is a version that can be restored.</li>
+            <li><strong>Free by default, any model by choice.</strong> A built-in reader works with no key. For photos and unusual layouts you can plug in Gemini, Groq, OpenRouter, Ollama, Claude or OpenAI through one interface.</li>
+            <li><strong>Arabic is first class.</strong> The whole portal is translated with a right-to-left layout, and CI fails if any screen is missing its Arabic.</li>
+          </ul>
+          <h4>Measured with the free reader, no AI model</h4>
+          <table class="eval">
+            <thead><tr><th scope="col">Synthetic invoices</th><th scope="col">Right decision</th><th scope="col">Fields correct</th></tr></thead>
+            <tbody>
+              <tr><td>All (60)</td><td>80%</td><td>81%</td></tr>
+              <tr><td>Text (40)</td><td>90%</td><td>92%</td></tr>
+              <tr><td>PDF with a text layer (10)</td><td>100%</td><td>100%</td></tr>
+              <tr><td>Photos (10)</td><td>20%</td><td>13%</td></tr>
+            </tbody>
+          </table>
+          <p>Nothing was wrongly approved or wrongly rejected. What the reader cannot read goes to a person instead of being guessed. Photos are its weak spot, and that is where a model is meant to help. The repo has an evaluation page for measuring that with your own key.</p>
+          <ul class="stack" aria-label="Technology">
+            <li>Python</li><li>FastAPI</li><li>React</li><li>TypeScript</li><li>SQLite</li><li>Gemini, Claude, OpenAI</li><li>MCP server</li><li>Docker</li><li>GitHub Actions</li><li>162 tests</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="case">
         <div class="case-meta">
           <h3>feedback-agent</h3>
           <p>Public code. Python. 2026.</p>
