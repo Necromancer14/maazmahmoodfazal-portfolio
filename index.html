@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="darkreader-lock">
 <title>Maaz Mahmood Fazal, AI Agents &amp; Automation Architect</title>
 <meta name="description" content="AI agents and automation architect. I design and deliver LLM agents and automation for insurance, healthcare, telecom, logistics and finance teams.">
 <meta property="og:title" content="Maaz Mahmood Fazal, AI Agents &amp; Automation Architect">
@@ -195,9 +197,10 @@ img { max-width: 100%; display: block; }
 .legend i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
 .flow { width: 100%; height: auto; margin-top: 18px; overflow: visible; }
 .flow-tall { display: none; max-width: 400px; margin-left: auto; margin-right: auto; }
-.flow .node rect { fill: var(--bg); fill-opacity: .78; stroke: var(--line); stroke-width: 1.5; }
+.flow .node rect { fill: var(--bg); stroke: var(--line); stroke-width: 1.5; }
 .flow .w-bg { fill: var(--surface); }
 .flow .node-end rect { stroke: var(--ok); }
+.flow .hl { fill: none; stroke: var(--ok); stroke-width: 2.5; }
 .flow .node-warn rect { stroke: var(--signal); stroke-dasharray: 5 4; }
 .flow .n-title { fill: var(--ink); font-size: 14px; font-weight: 700; font-stretch: 100%; }
 .flow .n-sub { fill: var(--muted); font-size: 12px; }
@@ -214,7 +217,7 @@ img { max-width: 100%; display: block; }
 .flow .dot.warn { fill: var(--signal); }
 .flow .dot.loop { fill: var(--loop); }
 .live-note { margin: 14px 0 0; font-size: 0.95rem; color: var(--muted); max-width: 72ch; }
-@media (prefers-reduced-motion: reduce) { .flow .dot { display: none; } .flow .wire-main { animation: none; } html { scroll-behavior: auto; } }
+@media (prefers-reduced-motion: reduce) { .flow .dot, .flow .hl { display: none; } .flow .wire-main { animation: none; } html { scroll-behavior: auto; } }
 
 /* sections */
 section { padding: 72px 0 0; scroll-margin-top: 48px; }
@@ -415,18 +418,14 @@ footer { border-top: 1px solid var(--line); padding: 20px 0 32px; color: var(--m
 <text class="w-label" x="591.0" y="23" text-anchor="middle">Retry with changes</text>
 <path class="wire wire-azure" d="M419.0,128 L419.0,228"/>
 <circle r="6" class="dot ok" opacity="0"><animateMotion dur="8s" begin="0s" repeatCount="indefinite" path="M75.0,96.0 L935.0,96.0"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.94;1" dur="8s" begin="0s" repeatCount="indefinite"/></circle>
-<circle r="6" class="dot ok" opacity="0"><animateMotion dur="8s" begin="-1.6s" repeatCount="indefinite" path="M75.0,96.0 L935.0,96.0"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.94;1" dur="8s" begin="-1.6s" repeatCount="indefinite"/></circle>
-<circle r="6" class="dot ok" opacity="0"><animateMotion dur="8s" begin="-3.2s" repeatCount="indefinite" path="M75.0,96.0 L935.0,96.0"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.94;1" dur="8s" begin="-3.2s" repeatCount="indefinite"/></circle>
-<circle r="6" class="dot ok" opacity="0"><animateMotion dur="8s" begin="-4.8s" repeatCount="indefinite" path="M75.0,96.0 L935.0,96.0"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.94;1" dur="8s" begin="-4.8s" repeatCount="indefinite"/></circle>
-<circle r="6" class="dot ok" opacity="0"><animateMotion dur="8s" begin="-6.4s" repeatCount="indefinite" path="M75.0,96.0 L935.0,96.0"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.94;1" dur="8s" begin="-6.4s" repeatCount="indefinite"/></circle>
 <circle r="6" class="dot warn" opacity="0"><animateMotion dur="8s" begin="-2.4s" repeatCount="indefinite" path="M75.0,96.0 L247.0,96.0 L247.0,244"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.94;1" dur="8s" begin="-2.4s" repeatCount="indefinite"/></circle>
 <circle r="6" class="dot loop" opacity="0"><animateMotion dur="11s" begin="-5s" repeatCount="indefinite" path="M75.0,96.0 L763.0,96.0 L763.0,64 C763.0,6 419.0,6 419.0,64 L419.0,96.0 L935.0,96.0"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.94;1" dur="11s" begin="-5s" repeatCount="indefinite"/></circle>
-<g class="node"><rect x="0" y="64" width="150" height="64" rx="10"/><text x="14" y="92.0" class="n-title">Request arrives</text><text x="14" y="111.0" class="n-sub">Email or portal</text></g>
-<g class="node"><rect x="172" y="64" width="150" height="64" rx="10"/><text x="186" y="92.0" class="n-title">LLM classifies</text><text x="186" y="111.0" class="n-sub">Type, holder, requestor</text></g>
-<g class="node"><rect x="344" y="64" width="150" height="64" rx="10"/><text x="358" y="92.0" class="n-title">Agent orchestrates</text><text x="358" y="111.0" class="n-sub">Picks the workflow</text></g>
-<g class="node"><rect x="516" y="64" width="150" height="64" rx="10"/><text x="530" y="92.0" class="n-title">Certificate built</text><text x="530" y="111.0" class="n-sub">Outmarket.ai API</text></g>
-<g class="node"><rect x="688" y="64" width="150" height="64" rx="10"/><text x="702" y="92.0" class="n-title">Servicer reviews</text><text x="702" y="111.0" class="n-sub">Approve, reject, retry</text></g>
-<g class="node node-end"><rect x="860" y="64" width="150" height="64" rx="10"/><text x="874" y="92.0" class="n-title">Emailed and filed</text><text x="874" y="111.0" class="n-sub">Audit trail kept</text></g>
+<g class="node"><rect x="0" y="64" width="150" height="64" rx="10"/><text x="14" y="92.0" class="n-title">Request arrives</text><text x="14" y="111.0" class="n-sub">Email or portal</text></g><rect class="hl" x="0" y="64" width="150" height="64" rx="10" opacity="0"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0.000;0.087;0.099;1.000" dur="8s" begin="0s" repeatCount="indefinite"/></rect>
+<g class="node"><rect x="172" y="64" width="150" height="64" rx="10"/><text x="186" y="92.0" class="n-title">LLM classifies</text><text x="186" y="111.0" class="n-sub">Type, holder, requestor</text></g><rect class="hl" x="172" y="64" width="150" height="64" rx="10" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.000;0.101;0.113;0.287;0.299;1.000" dur="8s" begin="0s" repeatCount="indefinite"/></rect>
+<g class="node"><rect x="344" y="64" width="150" height="64" rx="10"/><text x="358" y="92.0" class="n-title">Agent orchestrates</text><text x="358" y="111.0" class="n-sub">Picks the workflow</text></g><rect class="hl" x="344" y="64" width="150" height="64" rx="10" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.000;0.301;0.313;0.487;0.499;1.000" dur="8s" begin="0s" repeatCount="indefinite"/></rect>
+<g class="node"><rect x="516" y="64" width="150" height="64" rx="10"/><text x="530" y="92.0" class="n-title">Certificate built</text><text x="530" y="111.0" class="n-sub">Outmarket.ai API</text></g><rect class="hl" x="516" y="64" width="150" height="64" rx="10" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.000;0.501;0.513;0.687;0.699;1.000" dur="8s" begin="0s" repeatCount="indefinite"/></rect>
+<g class="node"><rect x="688" y="64" width="150" height="64" rx="10"/><text x="702" y="92.0" class="n-title">Servicer reviews</text><text x="702" y="111.0" class="n-sub">Approve, reject, retry</text></g><rect class="hl" x="688" y="64" width="150" height="64" rx="10" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.000;0.701;0.713;0.887;0.899;1.000" dur="8s" begin="0s" repeatCount="indefinite"/></rect>
+<g class="node node-end"><rect x="860" y="64" width="150" height="64" rx="10"/><text x="874" y="92.0" class="n-title">Emailed and filed</text><text x="874" y="111.0" class="n-sub">Audit trail kept</text></g><rect class="hl" x="860" y="64" width="150" height="64" rx="10" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.000;0.901;0.913;1.000;1.000;1.000" dur="8s" begin="0s" repeatCount="indefinite"/></rect>
 <g class="node node-warn"><rect x="172" y="216" width="150" height="56" rx="10"/><text x="186" y="240.0" class="n-title">Manual queue</text><text x="186" y="259.0" class="n-sub">About 5% of requests</text></g>
 <text class="w-label" x="344" y="216" text-anchor="start" dx="83.0">Runs on Azure</text>
 <g class="chip"><rect x="344" y="228" width="148" height="40" rx="20"/><text x="418" y="253" text-anchor="middle">Service Bus</text></g>
@@ -445,18 +444,14 @@ footer { border-top: 1px solid var(--line); padding: 20px 0 32px; color: var(--m
 <path class="wire wire-loop" d="M210,372.0 C306,372.0 306,200.0 210,200.0"/>
 <text class="w-label" x="254" y="290.0" text-anchor="middle">Retry</text>
 <circle r="6" class="dot ok" opacity="0"><animateMotion dur="8s" begin="0s" repeatCount="indefinite" path="M112.0,28.0 L112.0,458.0"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.94;1" dur="8s" begin="0s" repeatCount="indefinite"/></circle>
-<circle r="6" class="dot ok" opacity="0"><animateMotion dur="8s" begin="-1.6s" repeatCount="indefinite" path="M112.0,28.0 L112.0,458.0"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.94;1" dur="8s" begin="-1.6s" repeatCount="indefinite"/></circle>
-<circle r="6" class="dot ok" opacity="0"><animateMotion dur="8s" begin="-3.2s" repeatCount="indefinite" path="M112.0,28.0 L112.0,458.0"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.94;1" dur="8s" begin="-3.2s" repeatCount="indefinite"/></circle>
-<circle r="6" class="dot ok" opacity="0"><animateMotion dur="8s" begin="-4.8s" repeatCount="indefinite" path="M112.0,28.0 L112.0,458.0"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.94;1" dur="8s" begin="-4.8s" repeatCount="indefinite"/></circle>
-<circle r="6" class="dot ok" opacity="0"><animateMotion dur="8s" begin="-6.4s" repeatCount="indefinite" path="M112.0,28.0 L112.0,458.0"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.94;1" dur="8s" begin="-6.4s" repeatCount="indefinite"/></circle>
 <circle r="6" class="dot warn" opacity="0"><animateMotion dur="8s" begin="-2.4s" repeatCount="indefinite" path="M112.0,28.0 L112.0,114.0 L300,114.0"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.94;1" dur="8s" begin="-2.4s" repeatCount="indefinite"/></circle>
 <circle r="6" class="dot loop" opacity="0"><animateMotion dur="11s" begin="-5s" repeatCount="indefinite" path="M112.0,28.0 L112.0,372.0 L210,372.0 C306,372.0 306,200.0 210,200.0 L112.0,200.0 L112.0,458.0"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.94;1" dur="11s" begin="-5s" repeatCount="indefinite"/></circle>
-<g class="node"><rect x="14" y="0" width="196" height="56" rx="10"/><text x="28" y="24.0" class="n-title">Request arrives</text><text x="28" y="43.0" class="n-sub">Email or portal</text></g>
-<g class="node"><rect x="14" y="86" width="196" height="56" rx="10"/><text x="28" y="110.0" class="n-title">LLM classifies</text><text x="28" y="129.0" class="n-sub">Type, holder, requestor</text></g>
-<g class="node"><rect x="14" y="172" width="196" height="56" rx="10"/><text x="28" y="196.0" class="n-title">Agent orchestrates</text><text x="28" y="215.0" class="n-sub">Picks the workflow</text></g>
-<g class="node"><rect x="14" y="258" width="196" height="56" rx="10"/><text x="28" y="282.0" class="n-title">Certificate built</text><text x="28" y="301.0" class="n-sub">Outmarket.ai API</text></g>
-<g class="node"><rect x="14" y="344" width="196" height="56" rx="10"/><text x="28" y="368.0" class="n-title">Servicer reviews</text><text x="28" y="387.0" class="n-sub">Approve, reject, retry</text></g>
-<g class="node node-end"><rect x="14" y="430" width="196" height="56" rx="10"/><text x="28" y="454.0" class="n-title">Emailed and filed</text><text x="28" y="473.0" class="n-sub">Audit trail kept</text></g>
+<g class="node"><rect x="14" y="0" width="196" height="56" rx="10"/><text x="28" y="24.0" class="n-title">Request arrives</text><text x="28" y="43.0" class="n-sub">Email or portal</text></g><rect class="hl" x="14" y="0" width="196" height="56" rx="10" opacity="0"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0.000;0.065;0.077;1.000" dur="8s" begin="0s" repeatCount="indefinite"/></rect>
+<g class="node"><rect x="14" y="86" width="196" height="56" rx="10"/><text x="28" y="110.0" class="n-title">LLM classifies</text><text x="28" y="129.0" class="n-sub">Type, holder, requestor</text></g><rect class="hl" x="14" y="86" width="196" height="56" rx="10" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.000;0.123;0.135;0.265;0.277;1.000" dur="8s" begin="0s" repeatCount="indefinite"/></rect>
+<g class="node"><rect x="14" y="172" width="196" height="56" rx="10"/><text x="28" y="196.0" class="n-title">Agent orchestrates</text><text x="28" y="215.0" class="n-sub">Picks the workflow</text></g><rect class="hl" x="14" y="172" width="196" height="56" rx="10" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.000;0.323;0.335;0.465;0.477;1.000" dur="8s" begin="0s" repeatCount="indefinite"/></rect>
+<g class="node"><rect x="14" y="258" width="196" height="56" rx="10"/><text x="28" y="282.0" class="n-title">Certificate built</text><text x="28" y="301.0" class="n-sub">Outmarket.ai API</text></g><rect class="hl" x="14" y="258" width="196" height="56" rx="10" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.000;0.523;0.535;0.665;0.677;1.000" dur="8s" begin="0s" repeatCount="indefinite"/></rect>
+<g class="node"><rect x="14" y="344" width="196" height="56" rx="10"/><text x="28" y="368.0" class="n-title">Servicer reviews</text><text x="28" y="387.0" class="n-sub">Approve, reject, retry</text></g><rect class="hl" x="14" y="344" width="196" height="56" rx="10" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.000;0.723;0.735;0.865;0.877;1.000" dur="8s" begin="0s" repeatCount="indefinite"/></rect>
+<g class="node node-end"><rect x="14" y="430" width="196" height="56" rx="10"/><text x="28" y="454.0" class="n-title">Emailed and filed</text><text x="28" y="473.0" class="n-sub">Audit trail kept</text></g><rect class="hl" x="14" y="430" width="196" height="56" rx="10" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.000;0.923;0.935;1.000;1.000;1.000" dur="8s" begin="0s" repeatCount="indefinite"/></rect>
 <g class="node node-warn"><rect x="238" y="86" width="112" height="56" rx="10"/><text x="250" y="110" class="n-title">Manual</text><text x="250" y="129" class="n-sub">About 5%</text></g>
 </svg>
       <figcaption class="live-note">Certificate of insurance requests for a US insurance client. About 95% complete through the agent, and a person still approves every certificate before it goes out.</figcaption>
