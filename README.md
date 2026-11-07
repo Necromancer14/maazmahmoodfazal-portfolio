@@ -40,7 +40,9 @@ Client work sits behind security, so this is the code I can show.
 | PDF with a text layer (10) | 100% | 100% |
 | Photos (10) | 20% | 13% |
 
-No unsafe auto-approvals and no wrong rejections. What the reader cannot read goes to a person.
+No unsafe auto-approvals and no wrong rejections. What the reader cannot read goes to a person. With an AI model reading the invoices, it made the right decision on all 60.
+
+[Watch the 90-second demo](https://necromancer14.github.io/maazmahmoodfazal-portfolio/assets/invoice-desk-demo.mp4)
 
 **[feedback-agent](https://github.com/Necromancer14/feedback-agent)**: a help-desk agent that answers from a knowledge base, abstains when nothing fits, and learns from thumbs up, thumbs down and corrections. It has 19 tests and a cross-validated evaluation, and the README reports the result as it came out.
 

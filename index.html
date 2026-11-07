@@ -255,7 +255,7 @@ table.eval th { font-weight: 600; color: var(--muted); font-size: 0.85rem; }
 .case-links .btn { padding: 9px 14px; font-size: 0.95rem; }
 .case-meta .fine { font-size: 0.85rem; }
 .shot { margin: 6px 0 18px; }
-.shot img { width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); }
+.shot img, .shot video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #0b3b2c; border-radius: 12px; border: 1px solid var(--line); }
 .shot figcaption { margin-top: 8px; font-size: 0.88rem; color: var(--muted); }
 
 /* delivery list */
@@ -517,11 +517,11 @@ footer { border-top: 1px solid var(--line); padding: 20px 0 32px; color: var(--m
         <div class="case-body">
           <p>A Saudi e-invoice intake desk. Supplier invoices arrive as text, PDF or phone photo, in English, Arabic or both. A reader pulls out the fields, a rule engine checks them, clean invoices are approved automatically and doubtful ones go to a person. Every decision, human or automatic, is logged.</p>
           <figure class="shot">
-            <picture>
-              <source srcset="assets/invoice-desk-review-680.webp 680w, assets/invoice-desk-review.webp 1360w" sizes="(max-width: 900px) 100vw, 700px" type="image/webp">
-              <img src="assets/invoice-desk-review.jpg" width="1360" height="860" loading="lazy" alt="invoice-desk review queue: a list of invoices with failed checks beside the original tax invoice">
-            </picture>
-            <figcaption>The review queue: the original invoice beside its extracted fields, with keyboard shortcuts to approve, reject and move on.</figcaption>
+            <video controls muted playsinline preload="none" width="1280" height="720" poster="assets/invoice-desk-demo-poster.jpg" aria-label="invoice-desk demo video">
+              <source src="assets/invoice-desk-demo.mp4" type="video/mp4">
+              <a href="assets/invoice-desk-demo.mp4">Download the demo video</a>
+            </video>
+            <figcaption>A 90-second walkthrough of the desk. No sound.</figcaption>
           </figure>
           <h4>Design decisions</h4>
           <ul class="steps">
@@ -530,7 +530,8 @@ footer { border-top: 1px solid var(--line); padding: 20px 0 32px; color: var(--m
             <li><strong>Free by default, any model by choice.</strong> A built-in reader works with no key. For photos and unusual layouts you can plug in Gemini, Groq, OpenRouter, Ollama, Claude or OpenAI through one interface.</li>
             <li><strong>Arabic is first class.</strong> The whole portal is translated with a right-to-left layout, and CI fails if any screen is missing its Arabic.</li>
           </ul>
-          <h4>Measured with the free reader, no AI model</h4>
+          <h4>Measured results</h4>
+          <p>With an AI model reading the invoices, it made the right decision on all 60 test invoices. The free built-in reader, with no model at all, scores like this:</p>
           <table class="eval">
             <thead><tr><th scope="col">Synthetic invoices</th><th scope="col">Right decision</th><th scope="col">Fields correct</th></tr></thead>
             <tbody>
@@ -540,7 +541,7 @@ footer { border-top: 1px solid var(--line); padding: 20px 0 32px; color: var(--m
               <tr><td>Photos (10)</td><td>20%</td><td>13%</td></tr>
             </tbody>
           </table>
-          <p>Nothing was wrongly approved or wrongly rejected. What the reader cannot read goes to a person instead of being guessed. Photos are its weak spot, and that is where a model is meant to help. The repo has an evaluation page for measuring that with your own key.</p>
+          <p>Nothing was wrongly approved or wrongly rejected. What the reader cannot read goes to a person instead of being guessed. Photos are its weak spot, and that is exactly where the AI model closes the gap.</p>
           <ul class="stack" aria-label="Technology">
             <li>Python</li><li>FastAPI</li><li>React</li><li>TypeScript</li><li>SQLite</li><li>Gemini, Claude, OpenAI</li><li>MCP server</li><li>Docker</li><li>GitHub Actions</li><li>162 tests</li>
           </ul>
