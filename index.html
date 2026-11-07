@@ -3,14 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Maaz Mahmood Fazal, AI Automation Lead</title>
-<meta name="description" content="AI automation lead and RPA solution architect. I design and deliver AI agents and automation for insurance, healthcare, telecom, logistics and finance teams.">
-<meta property="og:title" content="Maaz Mahmood Fazal, AI Automation Lead">
+<title>Maaz Mahmood Fazal, AI Agents &amp; Automation Architect</title>
+<meta name="description" content="AI agents and automation architect. I design and deliver LLM agents and automation for insurance, healthcare, telecom, logistics and finance teams.">
+<meta property="og:title" content="Maaz Mahmood Fazal, AI Agents &amp; Automation Architect">
 <meta property="og:description" content="AI agents and automation in production: a certificate of insurance agent on Azure, 100+ automated business processes, and public code with a real evaluation.">
 <meta property="og:image" content="https://necromancer14.github.io/maazmahmoodfazal-portfolio/assets/og.png">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://necromancer14.github.io/maazmahmoodfazal-portfolio/">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Maaz Mahmood Fazal",
+  "jobTitle": "AI Agents & Automation Architect",
+  "url": "https://necromancer14.github.io/maazmahmoodfazal-portfolio/",
+  "image": "https://necromancer14.github.io/maazmahmoodfazal-portfolio/assets/maaz.jpg",
+  "email": "mailto:maaz.mahmood1999@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Jeddah", "addressCountry": "SA" },
+  "worksFor": { "@type": "Organization", "name": "Oz" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Punjab University College of Information Technology" },
+  "knowsAbout": ["LLM agents", "AI automation", "Azure AI Foundry", "Model Context Protocol", "RAG", "UiPath", "Robotic process automation", "Azure DevOps"],
+  "knowsLanguage": ["English", "Arabic", "Urdu"],
+  "sameAs": ["https://www.linkedin.com/in/maaz-mahmood-fazal", "https://github.com/Necromancer14"]
+}
+</script>
 <link rel="preload" href="assets/archivo.woff2" as="font" type="font/woff2" crossorigin>
 <script>
   (function () {
@@ -154,6 +172,16 @@ img { max-width: 100%; display: block; }
 .facts div { padding: 14px 16px 0 0; }
 .facts dt { font-size: 0.85rem; color: var(--muted); font-stretch: 87%; }
 .facts dd { margin: 2px 0 0; font-weight: 600; font-size: 0.98rem; }
+.stats {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px;
+  margin: 32px 0 0; padding: 0; list-style: none;
+}
+.stats li { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+.stats strong {
+  display: block; font-size: clamp(1.5rem, 2.6vw, 2rem); line-height: 1.1;
+  font-weight: 800; font-stretch: 112%; color: var(--ok); font-variant-numeric: tabular-nums;
+}
+.stats span { display: block; margin-top: 6px; font-size: 0.9rem; color: var(--muted); line-height: 1.4; }
 
 /* live diagram */
 .live {
@@ -240,6 +268,17 @@ table.eval th { font-weight: 600; color: var(--muted); font-size: 0.85rem; }
 .jobs .j-body { padding: 0 0 20px; max-width: 70ch; }
 .jobs .j-body p { margin: 0 0 8px; }
 .jobs .j-body .stack { margin-top: 10px; }
+.more { margin-top: 40px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); padding: 0 20px; }
+.more > summary {
+  list-style: none; cursor: pointer; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; padding: 18px 0;
+}
+.more > summary::-webkit-details-marker { display: none; }
+.more > summary span { font-weight: 700; font-size: 1.1rem; font-stretch: 112%; }
+.more > summary small { color: var(--muted); font-size: 0.93rem; }
+.more > summary .chev { width: 18px; height: 18px; margin-left: auto; align-self: center; color: var(--muted); transition: transform .2s ease; }
+.more[open] > summary .chev { transform: rotate(45deg); }
+.more .group-title:first-of-type { margin-top: 4px; }
+.more > .jobs:last-child { margin-bottom: 20px; }
 
 /* experience */
 .timeline { list-style: none; margin: 0; padding: 0; border-left: 2px solid var(--line); }
@@ -282,6 +321,7 @@ footer { border-top: 1px solid var(--line); padding: 20px 0 32px; color: var(--m
   .hero-grid picture { order: -1; }
   .photo { width: 140px; border-radius: 14px; }
   .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
   .case { grid-template-columns: 1fr; gap: 16px; }
   .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
@@ -326,12 +366,12 @@ footer { border-top: 1px solid var(--line); padding: 20px 0 32px; color: var(--m
     <div class="hero-grid">
       <div>
         <h1 class="name">Maaz Mahmood Fazal</h1>
-        <p class="role">AI Automation Lead and RPA Solution Architect</p>
-        <p class="intro">I design and deliver AI agents and automation that do real operations work: certificates of insurance, telecom orders, SAP invoices and donation records. Over six years I have taken more than 100 business processes from manual to automated, first with UiPath and now with LLM agents on Azure.</p>
+        <p class="role">AI Agents &amp; Automation Architect</p>
+        <p class="intro">I design and deliver LLM agents that do real operations work: certificates of insurance, telecom orders, SAP invoices and donation records. I keep a person in the loop where it matters and route what the agent can't handle. Over six years I have taken more than 100 business processes from manual to automated, starting with RPA on UiPath and now with agents on Azure.</p>
         <div class="actions">
           <a class="btn btn-primary" href="mailto:maaz.mahmood1999@gmail.com">Email me</a>
           <a class="btn" href="https://www.linkedin.com/in/maaz-mahmood-fazal">LinkedIn</a>
-          <a class="btn" href="https://github.com/Necromancer14/feedback-agent">See public code</a>
+          <a class="btn" href="https://github.com/Necromancer14">See public code</a>
         </div>
       </div>
       <picture>
@@ -345,6 +385,13 @@ footer { border-top: 1px solid var(--line); padding: 20px 0 32px; color: var(--m
       <div><dt>Now</dt><dd>AI automation at Oz</dd></div>
       <div><dt>Open to</dt><dd>Saudi Arabia, UAE, Europe</dd></div>
     </dl>
+
+    <ul class="stats" aria-label="Results in numbers">
+      <li><strong>100+</strong><span>business processes taken from manual to automated</span></li>
+      <li><strong>95%</strong><span>of insurance certificate requests completed by the agent</span></li>
+      <li><strong>15 → 3 min</strong><span>handling time per telecom order</span></li>
+      <li><strong>40+ hrs</strong><span>of data entry saved a week for one logistics client</span></li>
+    </ul>
 
     <figure class="live" aria-labelledby="live-h">
       <div class="live-head">
@@ -436,7 +483,19 @@ footer { border-top: 1px solid var(--line); padding: 20px 0 32px; color: var(--m
             <li>A servicer opens the portal, checks the PDF and approves, rejects or retries it.</li>
             <li>Approved certificates are emailed to the requestor and filed. Every step is written to an audit trail.</li>
           </ol>
-          <p style="margin-top:14px">Requests the agent cannot place go to a manual queue. That is about 5% today, and phase 2 is planned to cover them.</p>
+          <h4>Design decisions</h4>
+          <ul class="steps">
+            <li><strong>The LLM decides what is asked, not what the certificate says.</strong> The certificate is built by the matching Outmarket.ai workflow, so the model never writes coverage details.</li>
+            <li><strong>A person approves every certificate.</strong> A wrong certificate goes to a third party, so the agent prepares the work and a servicer signs it off.</li>
+            <li><strong>Unclear requests go to people instead of a guess.</strong> If the agent cannot place a request, it goes to a manual queue.</li>
+            <li><strong>Queued, logged and keyless.</strong> Work moves through Service Bus so nothing is lost during spikes or retries, every step is written to Cosmos DB, and services authenticate with managed identities instead of stored secrets.</li>
+          </ul>
+          <h4>When it fails</h4>
+          <ul class="steps">
+            <li>Requests the agent cannot place go to the manual queue. That is about 5% today.</li>
+            <li>A servicer can retry a run with changes, which sends it back through orchestration, or reject it to the manual queue.</li>
+            <li>Next, phase 2 is planned to cover the requests that still go to the manual queue.</li>
+          </ul>
           <ul class="stack" aria-label="Technology">
             <li>Azure AI Foundry</li><li>LLM classification</li><li>Outmarket.ai API</li><li>Azure Service Bus</li><li>Cosmos DB</li><li>Blob Storage</li><li>Managed identities</li><li>Reviewer portal</li>
           </ul>
@@ -466,28 +525,35 @@ footer { border-top: 1px solid var(--line); padding: 20px 0 32px; color: var(--m
         </div>
       </article>
 
-      <h3 class="group-title">More delivery at Oz</h3>
-      <p class="group-sub">Insurance and healthcare automation for a US client, with HIPAA-compliant handling of PHI.</p>
+      <h3 class="group-title">More agents and LLMs in delivery</h3>
+      <p class="group-sub">Projects where an LLM makes the judgement calls and automation does the system work.</p>
       <div class="jobs">
-        <details><summary><span class="j-name">Email Procedure Bot<small>Agentic email triage</small></span><span class="j-res">70% less triage effort</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="j-body"><p>Reads incoming emails, works out what each one asks for, and creates a structured task in the client&#x27;s system.</p><p>Errors in task creation dropped by about 60%.</p><ul class="stack" aria-label="Technology"><li>UiPath</li><li>LLM</li><li>Agentic workflow</li></ul></div></details>
+<details><summary><span class="j-name">Email Procedure Bot<small>Agentic email triage. Oz</small></span><span class="j-res">70% less triage effort</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="j-body"><p>Reads incoming emails, works out what each one asks for, and creates a structured task in the client&#x27;s system.</p><p>Errors in task creation dropped by about 60%.</p><ul class="stack" aria-label="Technology"><li>UiPath</li><li>LLM</li><li>Agentic workflow</li></ul></div></details>
+<details><summary><span class="j-name">Distrivalto<small>SAP orders, invoices, tracking. HachiAi</small></span><span class="j-res">90% process efficiency</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="j-body"><p>A suite of bots that handles orders, invoices and tracking updates in SAP end to end.</p><p>A Gemini LLM with MCP tool calling handles the decisions the rules could not.</p><ul class="stack" aria-label="Technology"><li>UiPath</li><li>SAP</li><li>Gemini</li><li>MCP</li></ul></div></details>
+<details><summary><span class="j-name">IDRF<small>Nonprofit donation data. HachiAi</small></span><span class="j-res">42% better data accuracy</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="j-body"><p>Pulls donation data from Luminate Online, uses an LLM to map and validate fields, and produces finance-ready files with a reconciliation report.</p><p>Manual work on the process fell by 70%.</p><ul class="stack" aria-label="Technology"><li>UiPath</li><li>LLM</li><li>Luminate Online</li></ul></div></details>
+      </div>
+
+      <details class="more">
+        <summary><span>More automation delivery</span><small>10 RPA and DevOps projects at Oz and HachiAi</small><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <h3 class="group-title">At Oz</h3>
+        <p class="group-sub">Insurance and healthcare automation for a US client, with HIPAA-compliant handling of PHI.</p>
+        <div class="jobs">
 <details><summary><span class="j-name">Auto ID Card Generation<small>Insurance ID cards</small></span><span class="j-res">85% faster issuance</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="j-body"><p>Takes policy data and produces compliant insurance ID cards without anyone retyping it.</p><ul class="stack" aria-label="Technology"><li>UiPath</li><li>Document generation</li></ul></div></details>
 <details><summary><span class="j-name">Endorsements Bot<small>Policy changes</small></span><span class="j-res">80% faster processing</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="j-body"><p>Adds and removes vehicles on policies across several steps, then triggers ID card generation downstream.</p><ul class="stack" aria-label="Technology"><li>UiPath</li><li>Multi-bot design</li></ul></div></details>
 <details><summary><span class="j-name">Health Plan Notice Bot<small>HIPAA-compliant notices</small></span><span class="j-res">75% faster turnaround</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="j-body"><p>Generates health plan notices from policy updates, with PHI handled to HIPAA requirements.</p><p>Compliance errors dropped by about 65%.</p><ul class="stack" aria-label="Technology"><li>UiPath</li><li>Document generation</li><li>HIPAA</li></ul></div></details>
 <details><summary><span class="j-name">Alert on Variance Report<small>Expiry monitoring</small></span><span class="j-res">90% fewer missed follow-ups</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="j-body"><p>Watches for policies close to expiry and creates follow-up tasks for accounts at risk.</p><ul class="stack" aria-label="Technology"><li>UiPath</li><li>Monitoring</li></ul></div></details>
 <details><summary><span class="j-name">Release pipelines<small>CI/CD for every bot</small></span><span class="j-res">30% less deployment effort</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="j-body"><p>Azure DevOps pipelines and staged releases from source control to production for the whole bot portfolio.</p><ul class="stack" aria-label="Technology"><li>Azure DevOps</li><li>YAML</li><li>Git</li></ul></div></details>
-      </div>
-
-      <h3 class="group-title">At HachiAi</h3>
-      <p class="group-sub">Telecom, logistics, finance, eCommerce and nonprofit clients.</p>
-      <div class="jobs">
-        <details><summary><span class="j-name">TELUS Business Connect<small>Telecom order processing</small></span><span class="j-res">70% to 97% efficiency</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="j-body"><p>Reads order data from email and Excel, validates it, and creates orders in the internal system through APIs, then sends confirmations.</p><p>Average handling time per order went from 15 minutes to 3, and manual intervention fell by 60%. Built on REFramework.</p><ul class="stack" aria-label="Technology"><li>UiPath</li><li>REFramework</li><li>APIs</li></ul></div></details>
-<details><summary><span class="j-name">Distrivalto<small>SAP orders, invoices, tracking</small></span><span class="j-res">90% process efficiency</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="j-body"><p>A suite of bots that handles orders, invoices and tracking updates in SAP end to end.</p><p>A Gemini LLM with MCP tool calling handles the decisions the rules could not.</p><ul class="stack" aria-label="Technology"><li>UiPath</li><li>SAP</li><li>Gemini</li><li>MCP</li></ul></div></details>
-<details><summary><span class="j-name">IDRF<small>Nonprofit donation data</small></span><span class="j-res">42% better data accuracy</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="j-body"><p>Pulls donation data from Luminate Online, uses an LLM to map and validate fields, and produces finance-ready files with a reconciliation report.</p><p>Manual work on the process fell by 70%.</p><ul class="stack" aria-label="Technology"><li>UiPath</li><li>LLM</li><li>Luminate Online</li></ul></div></details>
+        </div>
+        <h3 class="group-title">At HachiAi</h3>
+        <p class="group-sub">Telecom, logistics, finance, eCommerce and nonprofit clients.</p>
+        <div class="jobs">
+<details><summary><span class="j-name">TELUS Business Connect<small>Telecom order processing</small></span><span class="j-res">70% to 97% efficiency</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="j-body"><p>Reads order data from email and Excel, validates it, and creates orders in the internal system through APIs, then sends confirmations.</p><p>Average handling time per order went from 15 minutes to 3, and manual intervention fell by 60%. Built on REFramework.</p><ul class="stack" aria-label="Technology"><li>UiPath</li><li>REFramework</li><li>APIs</li></ul></div></details>
 <details><summary><span class="j-name">Logistics Alliance<small>Shipment data entry</small></span><span class="j-res">40+ hours saved a week</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="j-body"><p>Posts shipment details from Excel reports into the logistics system through REST APIs, with every response and exception logged.</p><p>Errors fell by 50%. Retry logic covers transient API failures.</p><ul class="stack" aria-label="Technology"><li>UiPath</li><li>REST APIs</li><li>Orchestrator</li></ul></div></details>
 <details><summary><span class="j-name">CellNTell<small>eCommerce repricing</small></span><span class="j-res">33% higher profit</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="j-body"><p>Reprices listings across Amazon, Walmart and Best Buy automatically.</p><ul class="stack" aria-label="Technology"><li>UiPath</li><li>Web automation</li></ul></div></details>
 <details><summary><span class="j-name">Naylor<small>Invoice reconciliation</small></span><span class="j-res">30% fewer processing delays</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="j-body"><p>Validates invoices and reconciles them against records.</p><ul class="stack" aria-label="Technology"><li>UiPath</li><li>Excel</li></ul></div></details>
 <details><summary><span class="j-name">ATS<small>Appointment booking</small></span><span class="j-res">85% less manual booking</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="j-body"><p>Takes booking requests from Outlook and Excel, books free slots in the C3 portal, and sends confirmations.</p><p>Configurable slot logic and retries for portal timeouts.</p><ul class="stack" aria-label="Technology"><li>UiPath</li><li>Outlook</li><li>Web automation</li></ul></div></details>
-      </div>
+        </div>
+      </details>
     </div>
   </section>
 

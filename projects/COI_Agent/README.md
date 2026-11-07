@@ -29,6 +29,18 @@ flowchart LR
 3. A servicer logs in to the portal, sees each intake run and the generated PDF, and approves, rejects or retries it.
 4. Approved certificates are emailed to the requestor and filed in the document system.
 
+## Design decisions
+
+- **The LLM decides what is asked, not what the certificate says.** The certificate is built by the matching Outmarket.ai workflow, so the model never writes coverage details.
+- **A person approves every certificate.** A wrong certificate goes to a third party, so the agent prepares the work and a servicer signs it off.
+- **Unclear requests go to people instead of a guess.** If the agent cannot place a request, it goes to a manual queue.
+- **Queued, logged and keyless.** Work moves through Service Bus so nothing is lost during spikes or retries, every step is written to Cosmos DB, and services authenticate with managed identities instead of stored secrets.
+
+## When it fails
+
+- Requests the agent cannot place go to the manual queue. That is about 5% today.
+- A servicer can retry a run with changes, which sends it back through orchestration, or reject it to the manual queue.
+
 ## Platform
 
 | Concern | Service |

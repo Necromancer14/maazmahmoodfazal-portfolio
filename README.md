@@ -6,7 +6,7 @@
 
 **[Portfolio site](https://necromancer14.github.io/maazmahmoodfazal-portfolio/)** | [LinkedIn](https://www.linkedin.com/in/maaz-mahmood-fazal) | [maaz.mahmood1999@gmail.com](mailto:maaz.mahmood1999@gmail.com) | Jeddah, Saudi Arabia
 
-I design and deliver AI agents and automation that do real operations work: certificates of insurance, telecom orders, SAP invoices and donation records. Over six years I have taken more than 100 business processes from manual to automated, first with UiPath and now with LLM agents on Azure.
+**AI Agents & Automation Architect.** I design and deliver LLM agents that do real operations work: certificates of insurance, telecom orders, SAP invoices and donation records. I keep a person in the loop where it matters and route what the agent can't handle. Over six years I have taken more than 100 business processes from manual to automated, starting with RPA on UiPath and now with agents on Azure.
 
 I'm looking for AI automation and solution architect roles in Saudi Arabia, the UAE and Europe. I hold a transferable iqama.
 
